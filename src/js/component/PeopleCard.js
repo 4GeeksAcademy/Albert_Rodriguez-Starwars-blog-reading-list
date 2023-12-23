@@ -10,7 +10,7 @@ function PeopleCard() {
   // Fetch people on component mount
   useEffect(() => {
     actions.fetchPeople();
-  }, [actions]);
+  }, []);
 
   useEffect(() => {
     setPeople(store.people);
